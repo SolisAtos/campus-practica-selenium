@@ -1752,15 +1752,39 @@
       ],
       "value": ""
     }, {
-      "id": "b0645424-d13e-4915-b1a0-44d6a2c1d386",
+      "id": "07fa717e-85be-46fd-a94e-85dbbb5d4ba7",
       "comment": "",
-      "command": "verifyElementPresent",
+      "command": "executeScript",
+      "target": "return document.querySelector(\"img:nth-child(6)\").naturalWidth",
+      "targets": [],
+      "value": "imagenPresente"
+    }, {
+      "id": "58e61aa3-6981-4f14-9c57-1c88942d7d4d",
+      "comment": "",
+      "command": "echo",
+      "target": "${imagenPresente}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1553c666-3835-4174-bb35-d8d3856ed35a",
+      "comment": "",
+      "command": "if",
+      "target": "${imagenPresente} == 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76cfa33b-468a-4c15-b815-e08e0015b1d0",
+      "comment": "",
+      "command": "verifyElementNotPresent",
       "target": "css=img:nth-child(6)",
-      "targets": [
-        ["css=img:nth-child(6)", "css:finder"],
-        ["xpath=//div[@id='app']/div/div/div[2]/div[2]/div[2]/img[2]", "xpath:idRelative"],
-        ["xpath=//img[2]", "xpath:position"]
-      ],
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d6a5c84-85b5-4f85-9a66-c9b3a654cfab",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
       "value": ""
     }, {
       "id": "cd7889f6-0077-4c30-b1c0-914393055bbc",
